@@ -170,5 +170,13 @@ public class LongEventHandler2 implements WorkHandler {
 
 使用的时候需要根据自己的实际需求选择。
 
+使用队列来实现生产者消费者模式的问题：
+1. 只适应单个生产者，单个消费者的情况
+2. 队列头和尾，会被频繁修改
+3. 因为生产者和消费者的速度不一致，队列常常是空的，或者是满的，而且这种情况经常发生。
+
+
+disruptor获取一个游标后，必须要publish，放到finally代码块中，否则可能会阻塞其他producer对RingBuffer的Commit(Publish)
+
 
 http://ifeve.com/disruptor/

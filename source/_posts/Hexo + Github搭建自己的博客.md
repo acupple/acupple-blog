@@ -1,7 +1,7 @@
 ---
 title: Hexo + Github搭建自己的博客
 date: 2016-02-25 00:14:52
-tags:
+tags: 杂
 ---
 
 之前试过wordpress，博客园等，都觉得不是很爽
@@ -56,3 +56,6 @@ tags:
        hexo deploy
    {% endcodeblock %}
 然后就可以打开: http://username.github.io 来看自己的博客了。
+
+
+# [Markdown Example](http://blog.zhangruipeng.me/hexo-theme-hueman/2014/12/25/Markdown%20Example/#code)
